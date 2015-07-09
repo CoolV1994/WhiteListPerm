@@ -1,0 +1,3 @@
+# WhiteListPerm Configuration
+whiteList: false
+whiteListMessage: You are not white-listed.
