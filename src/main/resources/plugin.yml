@@ -1,6 +1,6 @@
 name: WhiteListPerm
 main: com.coolv1994.whitelistperm.WhiteListPerm
-version: 1.0
+version: 1.1
 description: White-list players with a permission.
 website: http://www.coolv1994.com/
 author: CoolV1994
@@ -8,12 +8,18 @@ commands:
   wlon:
     description: Enable white-list mode.
     usage: /<command>
+    permission: whitelist.admin
+    permission-message: You do not have permission to use this command.
   wloff:
     description: Disable white-list mode.
     usage: /<command>
+    permission: whitelist.admin
+    permission-message: You do not have permission to use this command.
   wlmsg:
     description: Change the white-listed message.
     usage: /<command> <message>
+    permission: whitelist.admin
+    permission-message: You do not have permission to use this command.
 permissions:
   whitelist.join:
     description: Permssion to join the server in white-list mode.

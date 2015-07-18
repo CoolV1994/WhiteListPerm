@@ -9,12 +9,9 @@ import org.bukkit.command.CommandSender;
  * Created by Vinnie on 7/8/2015.
  */
 public class wlon implements CommandExecutor {
-
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-		if (sender.hasPermission("whitelist.admin")) {
-			Config.whiteList = true;
-			sender.sendMessage("Enabled white-list mode.");
-		}
+		Config.whiteList = true;
+		sender.sendMessage("Enabled white-list mode.");
 		return true;
 	}
 }
